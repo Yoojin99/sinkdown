@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-//이 클래스는 캐릭터의 말들을 입력할 수 있다.
+//이 클래스는 캐릭터별로 적용할 수 있다.
 public class DialogueManager : MonoBehaviour
 {
     public Queue<string> sentences; //대화 내용 
@@ -13,14 +13,14 @@ public class DialogueManager : MonoBehaviour
  
     void Start()
     {
-        sentences = new Queue<string>();
+        sentences = new Queue<string>(); //size를 입력하면 Element0~~~~ 이렇게 생성됨
     }
 
-    // Update is called once per frame
     void Update()
     {
 
     }
+
     public void StartDialogue(Dialogue dialogue)
     {
         nameText.text = dialogue.name;
@@ -32,6 +32,7 @@ public class DialogueManager : MonoBehaviour
 
         DisplayNextSentence();
     }
+
     public void DisplayNextSentence()
     {
         if(sentences.Count == 0)

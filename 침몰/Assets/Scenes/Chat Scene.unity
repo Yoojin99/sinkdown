@@ -526,7 +526,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 10.799988, y: -225.09998}
-  m_SizeDelta: {x: -104.5, y: -203}
+  m_SizeDelta: {x: -104.5, y: -338}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1120773465
 MonoBehaviour:
@@ -885,6 +885,38 @@ MonoBehaviour:
     sentences:
     - Hello
     - it's me
+    - Do you wanna build a snowman?!
+    - Do you wanna build a snowman?!
+    - Do you wanna build a snowman?!
+    - Do you wanna build a snowman?!
+    - Do you wanna build a snowman?!
+    - Do you wanna build a snowman?!
+    - Do you wanna build a snowman?!
+    - Do you wanna build a snowman?!
+    - Do you wanna build a snowman?!
+    - Do you wanna build a snowman?!
+    - Do you wanna build a snowman?!
+    - Do you wanna build a snowman?!
+    - Do you wanna build a snowman?!
+    - Do you wanna build a snowman?!
+    - Do you wanna build a snowman?!
+    - Do you wanna build a snowman?!
+    - Do you wanna build a snowman?!
+    - Do you wanna build a snowman?!
+    - Do you wanna build a snowman?!
+    - Do you wanna build a snowman?!
+    - Do you wanna build a snowman?!
+    - Do you wanna build a snowman?!
+    - Do you wanna build a snowman?!
+    - Do you wanna build a snowman?!
+    - Do you wanna build a snowman?!
+    - Do you wanna build a snowman?!
+    - Do you wanna build a snowman?!
+    - Do you wanna build a snowman?!
+    - Do you wanna build a snowman?!
+    - Do you wanna build a snowman?!
+    - Do you wanna build a snowman?!
+    - Do you wanna build a snowman?!
     - Do you wanna build a snowman?!
 --- !u!114 &2066217859
 MonoBehaviour:
