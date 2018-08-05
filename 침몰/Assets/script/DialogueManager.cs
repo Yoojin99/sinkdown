@@ -2,18 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System.IO;
 
 //이 클래스는 캐릭터별로 적용할 수 있다.
 public class DialogueManager : MonoBehaviour
 {
-    public Queue<string> sentences; //대화 내용 
+    public Queue<Dialogue> sentences; 
     public Text nameText;//대화창: 이름
     public Text dialogueText;//대화창 : 대화
-
- 
+    
     void Start()
     {
-        sentences = new Queue<string>(); //size를 입력하면 Element0~~~~ 이렇게 생성됨
+        sentences = new Queue<Dialogue>();
     }
 
     void Update()
@@ -21,28 +21,30 @@ public class DialogueManager : MonoBehaviour
 
     }
 
-    public void StartDialogue(Dialogue dialogue)
+    public void StartDialogue(Dialogue[] dialogue)
     {
-        nameText.text = dialogue.name;
-        sentences.Clear();
-        foreach (string sentence in dialogue.sentences)
+     
+        foreach (Dialogue sentence in dialogue)
         {
             sentences.Enqueue(sentence);
         }
-
         DisplayNextSentence();
     }
 
     public void DisplayNextSentence()
     {
+        
         if(sentences.Count == 0)
         {
             EndDialogue();
             return;
         }
 
-        string sentence = sentences.Dequeue();
+        string sentence = sentences.Dequeue().sentences;
+        string name = sentences.Dequeue().name;
         dialogueText.text = sentence;
+        nameText.text = name;
+        
     }
 
     void EndDialogue()
