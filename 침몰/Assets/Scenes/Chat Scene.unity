@@ -465,12 +465,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4c34f4a04f8e504da0e0de1aefdbd42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue:
-    name: Linda
-    sentences:
-    - hello
-    - oh, yes
-    - 
+  dialogue: []
 --- !u!4 &858384494
 Transform:
   m_ObjectHideFlags: 0
@@ -520,7 +515,11 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 10.799988, y: -225.09998}
+<<<<<<< HEAD:침몰/Assets/Chat Scene.unity
   m_SizeDelta: {x: -104.5, y: 0}
+=======
+  m_SizeDelta: {x: -104.5, y: -758}
+>>>>>>> d895c7c4f0d5c095a93a43fafd492047dd702d2c:침몰/Assets/Scenes/Chat Scene.unity
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1120773465
 MonoBehaviour:
@@ -872,12 +871,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4c34f4a04f8e504da0e0de1aefdbd42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue:
-    name: Human
-    sentences:
-    - Hello
-    - it's me
-    - Do you wanna build a snowman?!
+  dialogue: []
 --- !u!114 &2066217859
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -910,3 +904,48 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2066217855}
+<<<<<<< HEAD:침몰/Assets/Chat Scene.unity
+=======
+  m_CullTransparentMesh: 0
+--- !u!1 &2107120478
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2107120479}
+  - component: {fileID: 2107120480}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2107120479
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2107120478}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 113.6, y: 109, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2107120480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2107120478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ddfcebfa29b6db4f8781faa0d3ce106, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  path: "C:\\Users\\\uAE40\uD61C\uC9C0\\Documents\\project\\sinkdown\\\uCE68\uBAB0\\Assets\\chatscripts"
+>>>>>>> d895c7c4f0d5c095a93a43fafd492047dd702d2c:침몰/Assets/Scenes/Chat Scene.unity
