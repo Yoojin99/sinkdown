@@ -5,12 +5,12 @@ using UnityEngine;
 public class WaterAttack : MonoBehaviour
 {
 
-    private playerMove player;
+    private Player player;
 
     // Use this for initialization
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player").GetComponent<playerMove>();
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
     }
 
 

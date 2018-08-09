@@ -3,13 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - ladder
-  - water
-  - stair
-  - elevator
-  - item
-  - rock
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -46,7 +40,4 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: object
-    uniqueID: 3156643667
     locked: 0
