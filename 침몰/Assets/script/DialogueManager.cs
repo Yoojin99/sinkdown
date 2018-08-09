@@ -8,11 +8,11 @@ public class DialogueManager : MonoBehaviour
     //UI : 이름칸, 대화칸
     public Text nameText;
     public Text dialogueText;
-    
-    //대화 큐
+
+    //대화 Queue
     private Queue<Dialogue> sentences;
 
-    //
+    //대화창을 움직이게 하는 애니메이터
     public Animator animator;
 
     
@@ -21,6 +21,7 @@ public class DialogueManager : MonoBehaviour
         sentences = new Queue<Dialogue>();
     }
     
+    //대화 시작 + 첫 문장 출력
     public void StartDialogue (Dialogue[] dialogue)
     {
         animator.SetBool("IsOpen", true); //open the dialogue box
@@ -36,6 +37,7 @@ public class DialogueManager : MonoBehaviour
 
     }
 
+    //다음 문장 출력
     public void DisplayNextSentence()
     {
         if(sentences.Count == 0)
@@ -49,7 +51,7 @@ public class DialogueManager : MonoBehaviour
         StartCoroutine(TypeSentence(sentence.sentences));
     }
 
-    //글자를 한개씩 나오게 만드는 효과
+    //문장 출력 시 글자를 한개씩 나오게 만드는 효과
     IEnumerator TypeSentence(string sentence)
     {
         dialogueText.text = "";
@@ -61,7 +63,7 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
-
+    //대화 종료
     void EndDialogue()
     {
         animator.SetBool("IsOpen", false);
