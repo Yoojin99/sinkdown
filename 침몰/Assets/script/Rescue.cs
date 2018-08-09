@@ -5,14 +5,14 @@ using UnityEngine;
 public class Rescue : MonoBehaviour
 {
 
-    private Player player;
+    private playerMove player;
 
     private int countkey = 0;
 
     // Use this for initialization
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<playerMove>();
     }
 
 

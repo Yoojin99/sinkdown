@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PoisonTrap : MonoBehaviour {
 
-    private Player player;
+    private playerMove player;
     Rigidbody2D rb;
 
     public GameObject poisontrap;
@@ -16,7 +16,7 @@ public class PoisonTrap : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         pos = this.gameObject.transform.position;
-        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<playerMove>();
         rb = GetComponent<Rigidbody2D>();
     }
     //&& Time.time>nextSpawnTime

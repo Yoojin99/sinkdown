@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ElecTrap : MonoBehaviour {
-    private Player player;
+    private playerMove player;
     private Lever lever;
 
     // Use this for initialization
     void Start () {
-        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<playerMove>();
         
     }
 
