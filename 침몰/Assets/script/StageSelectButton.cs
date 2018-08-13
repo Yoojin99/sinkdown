@@ -18,7 +18,6 @@ public class StageSelectButton : MonoBehaviour {
         Invoke("StageSelect", .5f);
 
     }
-    
 
     void StageSelect() {
         Application.LoadLevel("Stage select");

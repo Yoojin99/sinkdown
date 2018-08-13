@@ -1,19 +1,22 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+<<<<<<< HEAD
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+=======
+>>>>>>> e1636ce3841231d337f393af69f0ccdb88d10094
 
 public class playerMove : MonoBehaviour {
 
 
     float jumppower = 5f;
-    public float swimming_gravity = -0.005f;
 
     Rigidbody2D rigid;
 
     Vector3 movement;
     bool isJumping = false;
+<<<<<<< HEAD
     bool inLadder = false;
     bool onStair = false;
     bool inWater = false;
@@ -45,6 +48,8 @@ public class playerMove : MonoBehaviour {
 
     public static int check = 0;
     public bool rockCollide = false;//rock
+=======
+>>>>>>> e1636ce3841231d337f393af69f0ccdb88d10094
 
     public int speed;
 	// Use this for initialization
@@ -54,22 +59,12 @@ public class playerMove : MonoBehaviour {
         RescuedMob3 = false;
 
         rigid = gameObject.GetComponent<Rigidbody2D>();
-
-        CurrentHealth = MaxHealth;
-        Healthbar.value = CalculateHealth();
-
-
-        CurrentOxygen = MaxOxygen;
-        Oxygenbar.value = CalculateOxygen();
-
-
-        CurrentPoison = 0.001f;
-        Poisonbar.value = CalculatePoison();
     }
 	
 	// Update is called once per frame
 	void Update () {
 
+<<<<<<< HEAD
         if ( !onStair && !inWater)
         {
             LRMove();
@@ -132,32 +127,24 @@ public class playerMove : MonoBehaviour {
 
     void LRMove()
     {
+=======
+>>>>>>> e1636ce3841231d337f393af69f0ccdb88d10094
         //방향키로 플레이어 움직이기
-        if (Input.GetKey(KeyCode.LeftArrow))
-        {
+        if (Input.GetKey(KeyCode.LeftArrow)) {
             transform.localScale = new Vector3(-1, 1, 1);
-            transform.Translate(Vector3.left * speed * Time.deltaTime);
+            transform.Translate(Vector3.left * speed * Time.deltaTime/2);
         }
         if (Input.GetKey(KeyCode.RightArrow))
         {
             transform.Translate(Vector3.right * speed * Time.deltaTime);
             transform.localScale = new Vector3(1, 1, 1);
         }
-    }
 
-    void swimming()
-    {
-        LRMove();
-        if (Input.GetKey(KeyCode.DownArrow))
-        {
-            transform.Translate(Vector3.down * speed * Time.deltaTime);
-
-        }
-        if (Input.GetKey(KeyCode.UpArrow))
-        {
-            transform.Translate(Vector3.up * speed * Time.deltaTime/2);
-
-        }
+        isJumping = false;
+        if (Input.GetButtonDown("Jump"))
+            isJumping = true;
+        Jump();
+       
 
     }
 
@@ -165,12 +152,11 @@ public class playerMove : MonoBehaviour {
     {
         if (!isJumping) return;
 
-        
-
         rigid.velocity = Vector2.zero;
 
         Vector2 jumpVelocity = new Vector2(0, jumppower);
         rigid.AddForce(jumpVelocity, ForceMode2D.Impulse);
+<<<<<<< HEAD
 
         
         
@@ -329,4 +315,9 @@ public class playerMove : MonoBehaviour {
     
    
     
+=======
+
+        isJumping = false;
+    }
+>>>>>>> e1636ce3841231d337f393af69f0ccdb88d10094
 }

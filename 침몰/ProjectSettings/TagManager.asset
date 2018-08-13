@@ -3,6 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
+<<<<<<< HEAD
   tags:
   - ladder
   - water
@@ -12,6 +13,9 @@ TagManager:
   - rock
   - poison
   - rockstop
+=======
+  tags: []
+>>>>>>> e1636ce3841231d337f393af69f0ccdb88d10094
   layers:
   - Default
   - TransparentFX
@@ -48,7 +52,4 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: object
-    uniqueID: 3156643667
     locked: 0

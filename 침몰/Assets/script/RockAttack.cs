@@ -5,13 +5,18 @@ using UnityEngine;
 public class RockAttack : MonoBehaviour
 {
 
-    private playerMove player;
+    private Player player;
     Rigidbody2D rb;
 
     // Use this for initialization
+<<<<<<< HEAD
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<playerMove>();
+=======
+    void Start () {
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+>>>>>>> e1636ce3841231d337f393af69f0ccdb88d10094
         rb = GetComponent<Rigidbody2D>();
 
     }
@@ -19,7 +24,7 @@ public class RockAttack : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.gameObject.name.Equals("player"))
+        if (col.gameObject.name.Equals("Player"))
             rb.isKinematic = false;
 
 
@@ -27,6 +32,7 @@ public class RockAttack : MonoBehaviour
     }
     void OnCollisionEnter2D(Collision2D rock)
     {
+<<<<<<< HEAD
         if (rock.gameObject.name.Equals("player"))
         {
             player.DealDamage(5);
@@ -42,6 +48,16 @@ public class RockAttack : MonoBehaviour
         //if (rock.CompareTag("Untagged") {
 
 
+=======
+        if (rock.gameObject.name.Equals("Player")) {
+            player.DealDamage(5);
+            Destroy(gameObject);
+        }
+        /*
+        if (rock.CompareTag("Untagged")) {
+           
+        }*/
+>>>>>>> e1636ce3841231d337f393af69f0ccdb88d10094
     }
 
 

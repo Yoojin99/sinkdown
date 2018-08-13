@@ -5,7 +5,7 @@ using UnityEngine;
 public class Rescue : MonoBehaviour
 {
 
-    private playerMove player;
+    private Player player;
 
     private int countkey = 0;
 
@@ -13,7 +13,7 @@ public class Rescue : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player").GetComponent<playerMove>();
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
     }
 
 
