@@ -9,6 +9,7 @@ public class Rescue : MonoBehaviour
 
     private int countkey = 0;
 
+    public static int playerrescued = 0;
     // Use this for initialization
     void Start()
     {
@@ -26,12 +27,17 @@ public class Rescue : MonoBehaviour
         if (poisonarea.CompareTag("Player")&&countkey==3)
         {
             Destroy(gameObject);
+            playerrescued = 1;
+            
         }
     }
+
+    
 
     // Update is called once per frame
     void Update()
     {
+        
 
     }
 }

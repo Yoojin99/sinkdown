@@ -10,6 +10,8 @@ TagManager:
   - elevator
   - item
   - rock
+  - poison
+  - rockstop
   layers:
   - Default
   - TransparentFX

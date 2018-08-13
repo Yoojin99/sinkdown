@@ -2,13 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RockAttack : MonoBehaviour {
+public class RockAttack : MonoBehaviour
+{
 
     private playerMove player;
     Rigidbody2D rb;
 
     // Use this for initialization
-    void Start () {
+    void Start()
+    {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<playerMove>();
         rb = GetComponent<Rigidbody2D>();
 
@@ -19,25 +21,35 @@ public class RockAttack : MonoBehaviour {
     {
         if (col.gameObject.name.Equals("player"))
             rb.isKinematic = false;
-        
+
+
+
     }
     void OnCollisionEnter2D(Collision2D rock)
     {
-        if (rock.gameObject.name.Equals("player")) {
+        if (rock.gameObject.name.Equals("player"))
+        {
             player.DealDamage(5);
             Destroy(gameObject);
         }
-        
-        /*if (rock.CompareTag("Untagged")) {
-        
-        }*/
-    }
-            
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 
-   
+        if (rock.gameObject.name.Equals("b1f_stair") || rock.gameObject.name.Equals("b1f_first"))
+        {
+            Destroy(gameObject);
+        }
+
+
+        //if (rock.CompareTag("Untagged") {
+
+
+    }
+
+
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
+
+
 }
